@@ -148,13 +148,13 @@ public class Display implements ActionListener, KeyListener, WindowListener {
 	
 	public static int[] findWord(String s, int caretPosition){
 		caretPosition--;
-		while (caretPosition >= 0 && s.charAt(caretPosition) != ' ' && s.charAt(caretPosition) != '\n') {
+		while (caretPosition >= 0 && s.charAt(caretPosition) != ' ' && s.charAt(caretPosition) != '\n' && s.charAt(caretPosition) != '\r') {
 			caretPosition--;
 		}
 		caretPosition++;
 		int[] toReturn = new int[2];
 		toReturn[0] = caretPosition;
-		while(caretPosition < s.length() && s.charAt(caretPosition) != ' ' && s.charAt(caretPosition) != '\n'){
+		while(caretPosition < s.length() && s.charAt(caretPosition) != ' ' && s.charAt(caretPosition) != '\n' && s.charAt(caretPosition) != '\r'){
 			caretPosition++;
 		}
 		toReturn[1] = caretPosition;
@@ -173,6 +173,7 @@ public class Display implements ActionListener, KeyListener, WindowListener {
 			for(String s1 : s.applicableSubstrings){
 				if(s1.equals(word)){
 					textArea.getStyledDocument().setCharacterAttributes(indices[0], indices[1] - indices[0], s.attribute, true);
+					textArea.setCharacterAttributes(defaultAttr, true);
 					return;
 				}
 			}
@@ -221,14 +222,14 @@ public class Display implements ActionListener, KeyListener, WindowListener {
 			int i = 0;
 			while (i < s.length() - 1) {
 				char c = s.charAt(i);
-				while (c == ' ' || c == '\n') {
+				while (c == ' ' || c == '\n' || c == '\r') {
 					i++;
 					if (i >= s.length())
 						return toReturn;
 					c = s.charAt(i);
 				}
 				String s1 = "";
-				while (c != ' ' && c != '\n') {
+				while (c != ' ' && c != '\n' && c != '\r') {
 					s1 += c;
 					if(i == s.length() - 1){
 						break;

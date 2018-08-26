@@ -2,8 +2,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>/Users/aidensweezey/Documents/Programming/VectorSharp/Vector#.jar</jar>
-  <outfile>/Users/aidensweezey/Documents/Programming/VectorSharp/release_windows/Vector#.exe</outfile>
+  <jar>E:\Programming\VectorSharp\Vector#.jar</jar>
+  <outfile>E:\Programming\VectorSharp\release_windows\Vector#.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -13,12 +13,12 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon>/Users/aidensweezey/Documents/Programming/VectorSharp/package/windows/Vector#.ico</icon>
+  <icon>E:\Programming\VectorSharp\package\windows\Vector#.ico</icon>
   <jre>
-    <path>/usr/bin/java</path>
-    <bundledJre64Bit>true</bundledJre64Bit>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
     <bundledJreAsFallback>false</bundledJreAsFallback>
-    <minVersion>1.8.0</minVersion>
+    <minVersion>1.0.0</minVersion>
     <maxVersion></maxVersion>
     <jdkPreference>preferJre</jdkPreference>
     <runtimeBits>64/32</runtimeBits>

@@ -52,6 +52,7 @@ public class VectorSharpCompiler {
 		variables = new HashMap<>();
 		output = new StringBuilder();
 		syntaxTokens = new ArrayList<>();
+		codeString = codeString.replace("\r", "");
 		code = codeString.split("\n");
 		getTok();
 		while (true) {
