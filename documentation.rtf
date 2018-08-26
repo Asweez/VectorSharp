@@ -1,0 +1,175 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgray\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww12240\viewh7680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs60 \cf0 Vector# Documentation
+\b0\fs24 \
+\
+Version 1.0.0 \
+August 25, 2018\
+Aiden Sweezey\
+\
+There are two variable types: 
+\f1 double
+\f0  and 
+\f1 vector
+\f0 \
+\
+-To declare a variable, use the type and then a name and then an initial value, e.g.:\
+\
+
+\f1 \cf2 \cb3 double thisIsADouble = 23\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 vector thisIsAVector = <1, 2, 3>\
+\
+-vectors
+\f0  can be initialized two ways:\
+\
+
+\f1 vector v = <x, y, z>\
+vector v = <angleInDegrees, magnitude>
+\f0 \
+\
+the latter makes a 2D vector using the angle and magnitude\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+-You can use any combination of variables and literals to make an expression, so doing:\
+\
+
+\f1 double thisIsADouble = (2 * 3) + 4\
+double secondDouble = 3 * thisIsADouble
+\f0 \
+\
+would make 
+\f1 thisIsADouble
+\f0  equal to 10 and 
+\f1 secondDouble
+\f0  equal to 30\
+\
+-
+\f1 double
+\f0  and 
+\f1 vector
+\f0  can be used in arithmetic operations:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}
+\b Addition\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1
+\b0 \cf0 {\listtext	\uc0\u8259 	}
+\f1 double
+\f0  can be added to 
+\f1 double\
+\ls1\ilvl1
+\f0 {\listtext	\uc0\u8259 	}
+\f1 vector
+\f0  can be added to 
+\f1 vector\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f0 \cf0 {\listtext	\uc0\u8226 	}
+\b Subtraction\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1
+\b0 \cf0 {\listtext	\uc0\u8259 	}
+\f1 double
+\f0  can be subtracted from 
+\f1 double\
+\ls1\ilvl1
+\f0 {\listtext	\uc0\u8259 	}
+\f1 vector
+\f0  can be subtracted from 
+\f1 vector\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f0 \cf0 {\listtext	\uc0\u8226 	}
+\b Multiplication\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1
+\b0 \cf0 {\listtext	\uc0\u8259 	}
+\f1 double
+\f0  can be multiplied by 
+\f1 double\
+\ls1\ilvl1
+\f0 {\listtext	\uc0\u8259 	}
+\f1 vector
+\f0  can only be multiplied by a 
+\f1 double\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f0 \cf0 {\listtext	\uc0\u8226 	}
+\b Divison\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1
+\b0 \cf0 {\listtext	\uc0\u8259 	}
+\f1 double
+\f0  can be divided by 
+\f1 double\
+\ls1\ilvl1
+\f0 {\listtext	\uc0\u8259 	}
+\f1 vector
+\f0  can only be divided by 
+\f1 double\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \
+-Other 
+\f1 vector
+\f0  operations:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}
+\b Length: 
+\f1\b0 |vector|\
+\ls2\ilvl0
+\f0 {\listtext	\uc0\u8226 	}
+\b Normalize: 
+\f1\b0 [vector]\
+\ls2\ilvl0
+\f0 {\listtext	\uc0\u8226 	}
+\b Get Component: 
+\f1\b0 vector.x 
+\f0 or 
+\f1 vector.y 
+\f0 or
+\f1  vector.z\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \
+-Other math operations:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	\uc0\u8226 	}
+\b Square Root: 
+\f1\b0 ~number~\
+\ls3\ilvl0
+\f0 {\listtext	\uc0\u8226 	}
+\b Exponent: 
+\f1\b0 number^(number) 
+\f0 (note: the exponent MUST be in parentheses)
+\f1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \
+-Print to console using the 
+\f1 print
+\f0  command, e.g.:\
+\
+
+\f1 vector v = <1, 2, 3>\
+print 3 * v\
+\
+
+\f0 would output:\
+\
+
+\f1 <3, 6, 9>\
+\
+
+\f0 you can also print regular numbers as well as vectors\
+}
